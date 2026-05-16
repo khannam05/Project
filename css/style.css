@@ -56,8 +56,10 @@ html, body {
 h1 { letter-spacing: -2px; }
 
 .experience-card {
-    width: 350px;
-    flex: 0 0 350px;
+    width: 350px !important;
+    min-width: 350px !important;
+    max-width: 350px !important;
+    flex: 0 0 350px !important;
 }
 
 .card {
@@ -65,30 +67,20 @@ h1 { letter-spacing: -2px; }
     border: 1px solid #333;
     border-radius: 12px;
     overflow: hidden;
+    height: 100%;
 }
 
 .card-img-container {
-    height: 220px;
     width: 100%;
+    height: 220px;
     overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .card-img-top {
-    height: 100%;
     width: 100%;
+    height: 100%;
     object-fit: cover;
-}
-
-.logo-bg {
-    background-color: #000000;
-}
-
-.contain-img {
-    object-fit: contain !important;
-    padding: 15px;
+    object-position: center;
 }
 
 .btn-social {
